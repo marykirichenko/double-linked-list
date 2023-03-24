@@ -12,9 +12,9 @@ $ ./program_static <br />
 Build and test dynamic library
 
 $ gcc -Wall -fPIC -c functions.c <br />
-$ gcc functions.o -shared -o lib_functions.so <br />
+$ gcc functions.o -shared -o libfunctions.so <br />
 $ export LD_LIBRARY_PATH=.:"$LD_LIBRARY_PATH" <br />
-$ gcc main.o -L. -l_functions.so -o program_dynamic <br />
+$ gcc main.o -L. -lfunctions.so -o program_dynamic <br />
 $ ./program_dynamic <br />
 
 
