@@ -19,7 +19,8 @@ $ ./program_dynamic <br />
 
 
 Test dynamic library and rpath
-$ unset LD_LIBRARY_PATH
-$pwd //current working directory path
+
+$ unset LD_LIBRARY_PATH <br />
+$pwd //current working directory path <br />
 $ gcc -L. -Wl,-rpath=/your_lib_path/ -wall -o testrpath main.c -lfunctions <br />
 $ ./testrpath <br />
